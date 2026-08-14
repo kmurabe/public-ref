@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="恋愛について、事実と解釈を少し分けて考えるためのメモ">
+  <title>ふとおもったこと</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #3f514c;
+      --muted: #687a74;
+      --paper: rgba(250, 253, 251, .94);
+      --line: #d5e4de;
+      --accent: #568276;
+      --accent-soft: #dcece6;
+      --sky: #dbe8ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, #dfeee7 0, transparent 28rem),
+        radial-gradient(circle at 88% 35%, #e3edf2 0, transparent 26rem),
+        #f3f7f5;
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+      line-height: 1.9;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(28px, 6vw, 56px);
+      background: var(--paper);
+      border: 1px solid rgba(213, 228, 222, .9);
+      border-radius: 28px;
+      box-shadow: 0 18px 50px rgba(47, 79, 70, .08);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 12px;
+      color: #4f746a;
+      background: var(--accent-soft);
+      border-radius: 999px;
+      font-size: .82rem;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      color: #365f55;
+      font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      font-weight: 500;
+      letter-spacing: .08em;
+      line-height: 1.35;
+    }
+
+    section {
+      margin-top: 52px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: #3f6a60;
+      font-size: clamp(1.25rem, 4vw, 1.55rem);
+      line-height: 1.55;
+    }
+
+    h2::before {
+      display: block;
+      width: 44px;
+      height: 4px;
+      margin-bottom: 14px;
+      background: linear-gradient(90deg, #8db8aa, #8db8aa 60%, var(--sky) 60%);
+      border-radius: 999px;
+      content: "";
+    }
+
+    .example {
+      margin: 14px 0;
+      padding: 18px 20px;
+      background: #fffdfb;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .example h3 {
+      margin: 0 0 8px;
+      color: #456c62;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.35rem;
+    }
+
+    li + li { margin-top: 5px; }
+    strong { color: #456c62; }
+
+    .note {
+      margin-top: 18px;
+      padding: 15px 18px;
+      color: #6d625e;
+      background: #eaf2f0;
+      border-radius: 14px;
+      font-size: .94rem;
+    }
+
+    .facts {
+      padding: 20px 22px;
+      background: #fffdfb;
+      border: 1px solid var(--line);
+      border-left: 5px solid #87aeb7;
+      border-radius: 16px;
+    }
+
+    @media (max-width: 560px) {
+      main { margin: 16px auto; border-radius: 20px; }
+      section { margin-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="eyebrow">恋愛についての小さなメモ</span>
+      <h1>ふとおもったこと</h1>
+    </header>
+
+    <section>
+      <h2>事実に対して、解釈がポジティブ寄りかもしれない</h2>
+      <p>相手を好きになると、同じ出来事でも、自然と自分にとってうれしい意味に受け取りやすくなる気がする。なので、<strong>実際に起きたこと</strong>と<strong>そこから感じたこと</strong>を、いったん分けて考えてみてもよさそう。</p>
+
+      <div class="example">
+        <h3>デートを1〜2回した</h3>
+        <ul>
+          <li>好意的に見ると：もっと知りたい、関係を進めたいと思っているのかも。</li>
+          <li>別の見方をすると：まだ様子を見ている、友人として会っただけかも。</li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <h3>ハグやスキンシップがあった</h3>
+        <ul>
+          <li>好意的に見ると：恋愛的な好意や安心感があるのかも。</li>
+          <li>別の見方をすると：もともと距離感が近い人かも。性欲爆発してるかも。</li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <h3>褒められた、優しくされた</h3>
+        <ul>
+          <li>好意的に見ると：特別に大切に思ってくれているのかも。</li>
+          <li>別の見方をすると：誰にでも同じように接する人なのかも。</li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <h3>ほかの女性とも一緒にいる</h3>
+        <ul>
+          <li>好意的に見ると：友人や同僚で、恋愛関係ではないのかも。</li>
+          <li>別の見方をすると：ほかの相手とも会っていたり、話していることと実際の状況が違ったりする可能性もあるかも。</li>
+        </ul>
+      </div>
+
+      <p class="note">どちらかを最初から正解にしなくて大丈夫。良い見方にも少し不安な見方にも、まだ分からない部分が残っている。</p>
+    </section>
+
+    <section>
+      <h2>発言よりも、行動・事実を重めに評価したほうがいいかも</h2>
+      <p>「倫理的にはこう思う」「Tinderはこう使っている」といった話は、その人の考えや自己説明としては大切。でも、それだけで実際の行動まで分かるわけではないので、<strong>話していることと行動が合っているか</strong>をゆっくり見ていくのがよさそう。</p>
+
+      <div class="facts">
+        <ul>
+          <li>ちゃんとした企業に勤めていた、実際に確認できる生活の基盤</li>
+          <li>直近で出かけているかどうかなど、自分が直接知った範囲での行動</li>
+          <li>約束を守るか、連絡や態度に無理のない一貫性があるか</li>
+          <li>言っていることと、実際にしていることが合っているか</li>
+          <li>関係について聞いたとき、具体的で一貫した説明があるか</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
